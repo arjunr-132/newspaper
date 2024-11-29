@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact page</title>
+</head>
+<body>
+	<!--goback button-->
+	 <a href="newslistpage.html"> <button>Goback</button> </a>
+
+    <!--contactus-->
+	<div align="center">
+		<h1>Contact Us</h1>
+	</div>
+	
+	<!--contact formdata-->
+	<form>
+		<!--fname,mname,lname-->
+		<label for="fname">First Name</label><br>
+		<input type="text" id="fname" name="fname"><br>
+		<label for="mname">Middle Name</label><br>
+		<input type="text" id="mname" name="mname"><br>
+		<label for="lname">Last Name</label><br>
+		<input type="text" id="lname" name="lname"><br><br>
+		<input type="submit" value="Submit"><br><br>
+
+		<!--phonenumber-->
+		<label for="num">Mobile Number</label><br>
+		<input type="tel" id="num" name="num" maxlength="10" pattern="[0-9]{10}" placeholder="+91">
+		<input type="submit" value="Submit"><br><br>
+
+		<!--Type-->
+		<label for="select">Type</label>
+		<select id="select" name="select">
+			<option value="sales">Sales</option>
+			<option value="service">Service</option>
+			<option value="enquiry">Enquiry</option>
+			<option value="advertisement">Advertisement</option>
+			<option value="complaint">Complaint</option><br><br>
+		</select><br><br>
+
+		<!--description box-->
+        Description:
+        <br>
+        <textarea rows="5" cols="50" name="description"></textarea>
+        <input type="submit" value="Submit">
+	</form>
+</body>
+</html>
